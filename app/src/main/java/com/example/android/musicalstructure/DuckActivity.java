@@ -15,29 +15,31 @@ public class DuckActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_duck);
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the home image
         ImageView homeButton = (ImageView) findViewById(R.id.home_button);
 
         // Set a click listener on that View
         homeButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the home image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the main activity.
                 Intent homeButtonIntent = new Intent(DuckActivity.this, MainActivity.class);
 
-                // Start the new activity
+                // Start the main activity
                 startActivity(homeButtonIntent);
             }
         });
 
         // Play duck sound on image click
         ImageView duckButton = (ImageView) findViewById(R.id.duck_button);
+
+        // Create media player which play duck sound.
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.duck);
 
-        // Set a click listener on that View
+        // Set a click listener on duck image
         duckButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            //start player with duck sound
             @Override
             public void onClick(View view) {
                 mp.start();

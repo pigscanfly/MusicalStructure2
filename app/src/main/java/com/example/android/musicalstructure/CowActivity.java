@@ -16,29 +16,31 @@ public class CowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cow);
 
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the home image
         ImageView homeButton = (ImageView) findViewById(R.id.home_button2);
 
         // Set a click listener on that View
         homeButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the home image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the main activity.
                 Intent homeButtonIntent = new Intent(CowActivity.this, MainActivity.class);
 
-                // Start the new activity
+                // Start the main activity
                 startActivity(homeButtonIntent);
             }
         });
 
         // Play cow sound on image click
         ImageView cowButton = (ImageView) findViewById(R.id.cow_button);
+
+        // Create media player which play cow sound.
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.cow);
 
-        // Set a click listener on that View
+        // Set a click listener on cow image.
         cowButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            //start player with cow sound
             @Override
             public void onClick(View view) {
                 mp.start();

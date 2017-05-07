@@ -12,22 +12,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //Duck activity
+
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the duck image
         ImageView ducks = (ImageView) findViewById(R.id.duck_activity);
 
         // Set a click listener on that View
         ducks.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+
+            // The code in this method will be executed when the duck image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+
+                // Create a new intent to open the Duck activity
                 Intent ducksIntent = new Intent(MainActivity.this, DuckActivity.class);
 
-                // Start the new activity
+                // Start the Duck activity
                 startActivity(ducksIntent);
             }
         });
@@ -35,18 +39,18 @@ public class MainActivity extends AppCompatActivity {
         //Cow activity
 
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the cow image
         ImageView cows = (ImageView) findViewById(R.id.cow_activity);
 
         // Set a click listener on that View
         cows.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the cow image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the cow activity.
                 Intent cowsIntent = new Intent(MainActivity.this, CowActivity.class);
 
-                // Start the new activity
+                // Start the cow activity
                 startActivity(cowsIntent);
             }
         });
@@ -54,15 +58,15 @@ public class MainActivity extends AppCompatActivity {
         //pig activity
 
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the pig image
         ImageView pigs = (ImageView) findViewById(R.id.pig_activity);
 
         // Set a click listener on that View
         pigs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the pig image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the pig activity
                 Intent pigsIntent = new Intent(MainActivity.this, PigActivity.class);
 
                 // Start the new activity
@@ -73,18 +77,18 @@ public class MainActivity extends AppCompatActivity {
         //dog activity
 
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the dog image.
         ImageView dogs = (ImageView) findViewById(R.id.dog_activity);
 
         // Set a click listener on that View
         dogs.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the dog image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the dog activity.
                 Intent dogsIntent = new Intent(MainActivity.this, DogActivity.class);
 
-                // Start the new activity
+                // Start the dog activity
                 startActivity(dogsIntent);
             }
         });

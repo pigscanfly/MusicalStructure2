@@ -16,18 +16,18 @@ public class DogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dog);
 
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the home image
         ImageView homeButton = (ImageView) findViewById(R.id.home_button3);
 
         // Set a click listener on that View
         homeButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the home image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the main activity.
                 Intent homeButtonIntent = new Intent(DogActivity.this, MainActivity.class);
 
-                // Start the new activity
+                // Start the main activity
                 startActivity(homeButtonIntent);
             }
         });
@@ -35,11 +35,13 @@ public class DogActivity extends AppCompatActivity {
 
         // Play dog sound on image click
         ImageView dogButton = (ImageView) findViewById(R.id.dog_button);
+
+        // Create media player which play dog sound.
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.dog);
 
-        // Set a click listener on that View
+        //  // Set a click listener on dog image.
         dogButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            //start player with dog sound
             @Override
             public void onClick(View view) {
                 mp.start();

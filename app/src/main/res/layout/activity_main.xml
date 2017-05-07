@@ -1,69 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/colorPrimary"
     android:gravity="center"
-
+    android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
 
+    <!--First two images-->
 
-
-
-        <!--First two images-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
-
+            <!--Duck image-->
             <ImageView
                 android:id="@+id/duck_activity"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
-                android:src="@drawable/duck"
                 android:layout_margin="10dp"
-                android:contentDescription="@string/name_duck"/>
-
+                android:contentDescription="@string/name_duck"
+                android:src="@drawable/duck" />
+            <!--Cow image-->
             <ImageView
                 android:id="@+id/cow_activity"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
-                android:src="@drawable/cow"
                 android:layout_margin="10dp"
-                android:contentDescription="@string/name_cow"/>
+                android:contentDescription="@string/name_cow"
+                android:src="@drawable/cow" />
 
         </LinearLayout>
 
-
+    <!--Second two images-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
-            <!--Second two images-->
 
+            <!--Pig image-->
             <ImageView
                 android:id="@+id/pig_activity"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
-                android:src="@drawable/pig"
                 android:layout_margin="10dp"
-                android:contentDescription="@string/name_pig"/>
+                android:contentDescription="@string/name_pig"
+                android:src="@drawable/pig" />
 
-
+            <!--Dog image-->
             <ImageView
                 android:id="@+id/dog_activity"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
-                android:src="@drawable/dog"
                 android:layout_margin="10dp"
-                android:contentDescription="@string/name_dog"/>
+                android:contentDescription="@string/name_dog"
+                android:src="@drawable/dog" />
 
         </LinearLayout>
 

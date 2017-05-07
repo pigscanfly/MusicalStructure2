@@ -15,29 +15,34 @@ public class PigActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_pig);
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the home image
         ImageView homeButton = (ImageView) findViewById(R.id.home_button1);
 
         // Set a click listener on that View
         homeButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the home image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the main activity.
                 Intent homeButtonIntent = new Intent(PigActivity.this, MainActivity.class);
 
-                // Start the new activity
+                // Start the main activity
                 startActivity(homeButtonIntent);
             }
         });
 
         // Play pig sound on image click
+
+        //Find pig image
         ImageView pigButton = (ImageView) findViewById(R.id.pig_button);
+
+        // Create media player which play pig sound.
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.pig);
 
-        // Set a click listener on that View
+        // Set a click listener on pig image.
         pigButton.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+
+            //start player with pig sound
             @Override
             public void onClick(View view) {
                 mp.start();
