@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="name_pig">Pig</string>
+    <string name="name_cow">Cow</string>
+    <string name="name_duck">Duck</string>
+    <string name="name_dog">Dog</string>
+</resources>
