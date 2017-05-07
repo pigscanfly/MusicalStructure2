@@ -31,7 +31,7 @@
         android:layout_alignParentEnd="true">
 
         <ImageView
-            android:id="@+id/home_button3"
+            android:id="@+id/home_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"

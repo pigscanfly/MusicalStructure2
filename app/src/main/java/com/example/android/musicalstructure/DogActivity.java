@@ -17,7 +17,7 @@ public class DogActivity extends AppCompatActivity {
 
 
         // Find the View that shows the home image
-        ImageView homeButton = (ImageView) findViewById(R.id.home_button3);
+        ImageView homeButton = (ImageView) findViewById(R.id.home_button);
 
         // Set a click listener on that View
         homeButton.setOnClickListener(new View.OnClickListener() {

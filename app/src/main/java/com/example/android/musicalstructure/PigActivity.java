@@ -16,7 +16,7 @@ public class PigActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pig);
 
         // Find the View that shows the home image
-        ImageView homeButton = (ImageView) findViewById(R.id.home_button1);
+        ImageView homeButton = (ImageView) findViewById(R.id.home_button);
 
         // Set a click listener on that View
         homeButton.setOnClickListener(new View.OnClickListener() {
